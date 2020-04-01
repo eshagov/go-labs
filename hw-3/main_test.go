@@ -42,7 +42,6 @@ func Test_Top10(t *testing.T) {
 	t.Parallel()
 	for _, testCase := range testCases {
 		actualValue := TopTenWords(testCase.s)
-		//sort.Strings(data)
 		require.Equal(t, testCase.expected, actualValue)
 	}
 }
